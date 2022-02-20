@@ -1,30 +1,9 @@
 module radar {
 
 type DisplayName = String;
+type MinSumLengthOfVectorFields = Word32;
 
-struct OutputEntry {
-    Nullable<String>  sponsor;
-    String name;
-    String quadrant;
-    String ring;
-    String isNew;
-    String description;
-};
-
-// union RingType {
-//     Void adopt;
-//     Void trial;
-//     Void access;
-//     Void hold;
-// };
-
-// union QuadrantType {
-//     Void tools;
-//     Void platforms;
-//     Void processes;
-//     @DisplayName "languages & frameworks"
-//     Void lang_framework;
-// };
+// ---------------------------------------
 
 struct Radar {
     Quadrant tools;
@@ -34,8 +13,8 @@ struct Radar {
     Quadrant lang_framework;
 };
 
+@MinSumLengthOfVectorFields 1
 struct Quadrant {
-    Entry manditoryAdopt;
     Vector<Entry> adopt;
     Vector<Entry> trial;
     Vector<Entry> access;
@@ -49,60 +28,99 @@ struct Entry {
     Vector<String> description;
 };
 
-annotation Radar {
+// ---------------------------------------
+
+@MinSumLengthOfVectorFields 1
+struct Radar_Proc_Step_01 {
+    Vector<EntryWithQuadrant> adopt;
+    Vector<EntryWithQuadrant> trial;
+    Vector<EntryWithQuadrant> access;
+    Vector<EntryWithQuadrant> hold;
+};
+
+struct EntryWithQuadrant {
+    Nullable<String> sponsor = null;
+    String name;
+    String quadrant;
+    Bool isNew;
+    Vector<String> description;
+};
+
+// ---------------------------------------
+
+type RadarOutput = Vector<OutputEntry>;
+
+struct OutputEntry {
+    Nullable<String>  sponsor;
+    String name;
+    String quadrant;
+    String ring;
+    String isNew;
+    String description;
+};
+
+// ---------------------------------------
+
+struct Data {
+  Radar helix = {
     "tools": {
-        "manditoryAdopt": {
-            "name": "Gradle",
-            "isNew": true,
-            "description": [
-                "Gradle build system"
-            ]
-        },
-        "adopt": [],
+        "adopt": [
+            {
+                "name": "Gradle",
+                "isNew": true,
+                "description": [
+                    "Gradle build system"
+                ]
+            }
+        ],
         "trial": [],
         "access": [],
         "hold": []
     },
     "platforms": {
-        "manditoryAdopt": {
-            "name": "Lambdas",
-            "isNew": false,
-            "description": [
-                "Move deployment of Lambdas from Infra to app deployment"
-            ]
-        },
-        "adopt": [],
+        "adopt": [
+            {
+                "name": "Lambdas",
+                "isNew": false,
+                "description": [
+                    "Move deployment of Lambdas from Infra to app deployment"
+                ]
+            }
+        ],
         "trial": [],
         "access": [],
         "hold": []
     },
     "processes": {
-        "manditoryAdopt": {
-            "name": "Github Projects",
-            "isNew": false,
-            "description": [
-                "Lite weight semi-automated task management for PRs and Issues"
-            ]
-        },
-        "adopt": [],
+        "adopt": [
+            {
+                "name": "Github Projects",
+                "isNew": false,
+                "description": [
+                    "Lite weight semi-automated task management for PRs and Issues"
+                ]
+            }
+        ],
         "trial": [],
         "access": [],
         "hold": []
     },
     "lang_framework": {
-        "manditoryAdopt": {
-            "name": "ADL",
-            "isNew": false,
-            "description": [
-                "Algebraic Data Language (https://github.com/helix-collective/adl).",
-                "Conceptually equivalent to Google's Protobuf, designed specifically for data modelling."
-            ]
-        },
-        "adopt": [],
+        "adopt": [
+            {
+                "name": "ADL",
+                "isNew": false,
+                "description": [
+                    "Algebraic Data Language (https://github.com/helix-collective/adl).",
+                    "Conceptually equivalent to Google's Protobuf, designed specifically for data modelling."
+                ]
+            }
+        ],
         "trial": [],
         "access": [],
         "hold": []
     }
+  };
 };
 
 
