@@ -49,5 +49,26 @@
     "quadrant": "tools",
     "isNew": "true",
     "description": "Research project ..."
+  },
+  {
+    "name": "Lambdas",
+    "ring": "adopt",
+    "quadrant": "platforms",
+    "isNew": "false",
+    "description": "Move deployment of Lambdas from Infra to app deployment"
+  },
+  {
+    "name": "Github Projects",
+    "ring": "adopt",
+    "quadrant": "processes",
+    "isNew": "false",
+    "description": "Lite weight semi-automated task management for PRs and Issues"
+  },
+  {
+    "name": "Fibery",
+    "ring": "assess",
+    "quadrant": "processes",
+    "isNew": "true",
+    "description": "Highly customizable task management, being using by Neera."
   }
 ]
