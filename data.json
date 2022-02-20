@@ -7,13 +7,6 @@
     "description": "Algebraic Data Language (https://github.com/helix-collective/adl). Conceptually equivalent to Google's Protobuf, designed specifically for data modelling."
   },
   {
-    "name": "Bazel",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "false",
-    "description": "Bazel build system https://bazel.build/ from Google. Whilst it is probably technically superia to most other build systems, it lack community and echo system support (eg bot based dependance reports & IDE integration)."
-  },
-  {
     "name": "Gradle",
     "ring": "adopt",
     "quadrant": "tools",
@@ -70,5 +63,12 @@
     "quadrant": "processes",
     "isNew": "true",
     "description": "Highly customizable task management, being using by Neera."
+  },
+  {
+    "name": "Bazel",
+    "ring": "hold",
+    "quadrant": "tools",
+    "isNew": "false",
+    "description": "Bazel build system https://bazel.build/ from Google. Whilst it is probably technically superia to most other build systems, it lack community and echo system support (eg bot based dependance reports & IDE integration)."
   }
 ]
