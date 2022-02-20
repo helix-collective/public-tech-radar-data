@@ -13,6 +13,7 @@ struct Radar {
     Quadrant lang_framework;
 };
 
+// at the moment this annotation is only a comment, it is not enforced.
 @MinSumLengthOfVectorFields 1
 struct Quadrant {
     Vector<Entry> adopt;
