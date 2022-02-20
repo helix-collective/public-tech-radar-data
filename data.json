@@ -28,7 +28,7 @@
     "description": "https://github.com/helix-collective/adl-gradle-plugin"
   },
   {
-    "sponsors": ["gary"],
+    "sponsor": "gary",
     "name": "pre-commit.org",
     "ring": "trial",
     "quadrant": "tools",
@@ -43,7 +43,7 @@
     "description": "Micro-generator framework that makes it easy for an entire team to create files with a level of uniformity (https://github.com/plopjs/plop)."
   },
   {
-    "sponsors": ["gary"],
+    "sponsor": "gary",
     "name": "Synthesized ADL transforms",
     "ring": "assess",
     "quadrant": "tools",
