@@ -1,30 +1,53 @@
 [
   {
-    "name": "Babel",
+    "name": "ADL",
+    "ring": "adopt",
+    "quadrant": "languages & frameworks",
+    "isNew": "false",
+    "description": "Algebraic Data Language (https://github.com/helix-collective/adl). Conceptually equivalent to Google's Protobuf, designed specifically for data modelling."
+  },
+  {
+    "name": "Bazel",
+    "ring": "hold",
+    "quadrant": "tools",
+    "isNew": "false",
+    "description": "Bazel build system https://bazel.build/ from Google. Whilst it is probably technically superia to most other build systems, it lack community and echo system support (eg bot based dependance reports & IDE integration)."
+  },
+  {
+    "name": "Gradle",
     "ring": "adopt",
     "quadrant": "tools",
-    "isNew": "TRUE",
-    "description": "test"
+    "isNew": "true",
+    "description": "Gradle build system."
   },
   {
-    "name": "Apache Kafka",
+    "name": "adl-gradle-plugin",
     "ring": "trial",
-    "quadrant": "languages & frameworks",
-    "isNew": "FALSE",
-    "description": "test"
+    "quadrant": "tools",
+    "isNew": "true",
+    "description": "https://github.com/helix-collective/adl-gradle-plugin"
   },
   {
-    "name": "Android-x86",
-    "ring": "assess",
-    "quadrant": "platforms",
+    "sponsors": ["gary"],
+    "name": "pre-commit.org",
+    "ring": "trial",
+    "quadrant": "tools",
     "isNew": "TRUE",
-    "description": "test"
+    "description": "A framework for managing and maintaining multi-language pre-commit hooks (https://pre-commit.com/)."
   },
   {
-    "name": "GrapCloud lift and shifthQL",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "description": "test"
+    "name": "Plopjs",
+    "ring": "trial",
+    "quadrant": "tools",
+    "isNew": "true",
+    "description": "Micro-generator framework that makes it easy for an entire team to create files with a level of uniformity (https://github.com/plopjs/plop)."
+  },
+  {
+    "sponsors": ["gary"],
+    "name": "Synthesized ADL transforms",
+    "ring": "assess",
+    "quadrant": "tools",
+    "isNew": "true",
+    "description": "Research project ..."
   }
 ]
