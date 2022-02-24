@@ -65,6 +65,14 @@
     "description": "Highly customizable task management, being using by Neera."
   },
   {
+    "sponsor": "Fidel Torres",
+    "name": "NextJS",
+    "ring": "trail",
+    "quadrant": "languages & frameworks",
+    "isNew": "true",
+    "description": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
+  },
+  {
     "name": "Bazel",
     "ring": "hold",
     "quadrant": "tools",
