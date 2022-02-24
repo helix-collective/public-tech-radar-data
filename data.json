@@ -7,6 +7,14 @@
     "description": "Algebraic Data Language (https://github.com/helix-collective/adl). Conceptually equivalent to Google's Protobuf, designed specifically for data modelling."
   },
   {
+    "sponsor": "Fidel Torres",
+    "name": "NextJS",
+    "ring": "trial",
+    "quadrant": "languages & frameworks",
+    "isNew": "true",
+    "description": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
+  },
+  {
     "name": "Gradle",
     "ring": "adopt",
     "quadrant": "tools",
@@ -63,14 +71,6 @@
     "quadrant": "processes",
     "isNew": "true",
     "description": "Highly customizable task management, being using by Neera."
-  },
-  {
-    "sponsor": "Fidel Torres",
-    "name": "NextJS",
-    "ring": "trial",
-    "quadrant": "languages & frameworks",
-    "isNew": "true",
-    "description": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
   },
   {
     "name": "Bazel",
